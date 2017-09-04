@@ -10,14 +10,22 @@ export class ListStudentsComponent implements OnInit {
 
   constructor() { }
   
-  this.studentRecord = {
+  studNo: number;
+  studFname: string;
+  studLname: string;
+  studProg: string; 
+  studYr: number;s
+}
+
+  getStudentRecord():object {
+    this.studentRecord = {
     studNumber: this.studNo,
     studFirstName: this.studFname,
     studLastName: this.studLname,
     studProgram: this.studProg,
     studYear: this.studYr
     };
-  
+
   clearValues(): void{
     this.studNo = null;
     this.studFname = null;
